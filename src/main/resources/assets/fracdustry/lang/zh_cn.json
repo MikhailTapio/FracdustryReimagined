@@ -1,0 +1,36 @@
+{
+  "block.fracdustry.cable": "能量线缆",
+
+  "block.fracdustry.thermal_generator": "热力发电机",
+
+  "block.fracdustry.bauxite_ore": "铝土矿",
+  "block.fracdustry.cassiterite_ore": "锡石矿",
+  "block.fracdustry.ilmenite_ore": "钛铁矿",
+  "block.fracdustry.spodumene_ore": "锂辉石矿",
+  "block.fracdustry.deepslate_bauxite_ore": "深层铝土矿",
+  "block.fracdustry.deepslate_cassiterite_ore": "深层锡石矿",
+  "block.fracdustry.deepslate_ilmenite_ore": "深层钛铁矿",
+  "block.fracdustry.deepslate_spodumene_ore": "深层锂辉石矿",
+
+  "gui.fracdustry.burntime":"燃烧时间剩余：",
+  "gui.fracdustry.energy": "能量：",
+
+  "item.fracdustry.aluminum_ingot": "铝锭",
+  "item.fracdustry.aluminum_plate": "铝板",
+  "item.fracdustry.bronze_ingot": "青铜锭",
+  "item.fracdustry.bronze_plate": "青铜板",
+  "item.fracdustry.lithium_ingot": "锂锭",
+  "item.fracdustry.steel_ingot": "钢锭",
+  "item.fracdustry.steel_plate": "钢板",
+  "item.fracdustry.tin_ingot": "锡锭",
+  "item.fracdustry.tin_plate": "锡板",
+  "item.fracdustry.titanium_ingot": "钛锭",
+  "item.fracdustry.titanium_plate": "钛板",
+
+  "itemGroup.fracdustry_material": "分形工业：材料",
+  "itemGroup.fracdustry_machinery": "分形工业：机器",
+
+  "tooltips.fracdustry.generator":"热力发电机利用热能加热水产生水蒸气以提供机械能，后者最终由内置的动能发电机转换为电能。",
+
+  "units.fracdustry.sec": " 秒"
+}
