@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "fracdustry",
+  "version": "${version}",
+
+  "name": "Fracdustry Reimagined",
+  "description": "A unique technology modification ported from Forge to Fabric.",
+  "authors": [
+    "MikhailTapio",
+    "PoseidonLi",
+    "Arrokoth486958",
+    "Peakstep"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Peakstep233",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/fracdustry/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.anotherfractal.fracdustry.Fracdustry"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.17.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
