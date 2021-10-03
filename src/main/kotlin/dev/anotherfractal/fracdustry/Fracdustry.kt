@@ -1,12 +1,12 @@
 package dev.anotherfractal.fracdustry
 
-import dev.anotherfractal.fracdustry.items.materials.FRIngotItem
+import dev.anotherfractal.fracdustry.registry.FRItemRegistry
 import net.fabricmc.api.ModInitializer
 
 
 class Fracdustry : ModInitializer {
     override fun onInitialize() {
-        FRIngotItem.RegisterAll()
+        FRItemRegistry.RegisterAll()
     }
 }
 
