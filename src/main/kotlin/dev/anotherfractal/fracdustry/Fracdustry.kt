@@ -1,13 +1,12 @@
 package dev.anotherfractal.fracdustry
 
+import dev.anotherfractal.fracdustry.items.materials.FRIngotItem
+import net.fabricmc.api.ModInitializer
 
 
-@Suppress("unused")
-fun init() {
-    // This code runs as soon as Minecraft is in a mod-load-ready state.
-    // However, some things (like resources) may still be uninitialized.
-    // Proceed with mild caution.
-
-    println("Hello Fabric world!")
+class Fracdustry : ModInitializer {
+    override fun onInitialize() {
+        FRIngotItem.RegisterAll()
+    }
 }
 
