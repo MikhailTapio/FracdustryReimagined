@@ -19,6 +19,7 @@
   "item.fracdustry.aluminum_plate": "Aluminum Plate",
   "item.fracdustry.bronze_ingot": "Bronze Ingot",
   "item.fracdustry.bronze_plate": "Bronze Plate",
+  "item.fracdustry.cobalt_ingot": "Cobalt Ingot",
   "item.fracdustry.lithium_ingot": "Lithium Ingot",
   "item.fracdustry.steel_ingot": "Steel Ingot",
   "item.fracdustry.steel_plate": "Steel Plate",
@@ -26,9 +27,10 @@
   "item.fracdustry.tin_plate": "Tin Plate",
   "item.fracdustry.titanium_ingot": "Titanium Ingot",
   "item.fracdustry.titanium_plate": "Titanium Plate",
+  "item.fracdustry.uranium_ingot": "Uranium Ingot",
 
-  "itemGroup.fracdustry_material": "Fracdustry: Material",
-  "itemGroup.fracdustry_machinery": "Fracdustry: Machinery",
+  "itemGroup.fracdustry.material": "Fracdustry: Material",
+  "itemGroup.fracdustry.machinery": "Fracdustry: Machinery",
 
   "tooltips.fracdustry.generator": "The thermal generator uses thermal energy to heat water to produce steam to provide mechanical energy, which is eventually converted into electrical energy by the built-in kinetic generator.",
 
