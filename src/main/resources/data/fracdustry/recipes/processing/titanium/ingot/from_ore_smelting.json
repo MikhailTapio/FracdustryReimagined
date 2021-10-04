@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "tag": "forge:ores/ilmenite"
+    "tag": "c:blocks/ilmenite_ores"
   },
   "result": "fracdustry:titanium_ingot",
   "experience": 0.35,
