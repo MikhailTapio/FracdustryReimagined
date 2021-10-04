@@ -11,9 +11,9 @@ import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.SPODUMENE_ORE
 import dev.anotherfractal.fracdustry.itemgroups.FRItemGroups
 import dev.anotherfractal.fracdustry.items.materials.FRIngotItem
 import dev.anotherfractal.fracdustry.items.materials.FRPlateItem
+import dev.anotherfractal.fracdustry.registry.FRBlockRegistry.THERMAL_GENERATOR_BLOCK
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.item.BlockItem
-import net.minecraft.item.ItemGroup
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
@@ -75,6 +75,12 @@ object FRItemRegistry {
             Registry.ITEM,
             Identifier("fracdustry", "deepslate_spodumene_ore"),
             BlockItem(DEEPSLATE_SPODUMENE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+        )
+
+        Registry.register(
+            Registry.ITEM,
+            Identifier("fracdustry", "thermal_generator"),
+            BlockItem(THERMAL_GENERATOR_BLOCK, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MACHINERY))
         )
     }
 }
