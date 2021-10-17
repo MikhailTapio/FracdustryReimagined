@@ -2,6 +2,7 @@
   "block.fracdustry.cable": "能量线缆",
 
   "block.fracdustry.thermal_generator": "热力发电机",
+  "block.fracdustry.microwave_generator": "微波发电机",
 
   "block.fracdustry.bauxite_ore": "铝土矿",
   "block.fracdustry.cassiterite_ore": "锡石矿",
@@ -19,9 +20,6 @@
   "item.fracdustry.aluminum_plate": "铝板",
   "item.fracdustry.bronze_ingot": "青铜锭",
   "item.fracdustry.bronze_plate": "青铜板",
-  "item.fracdustry.cobalt_ingot": "钴锭",
-  "item.fracdustry.copper_plate": "铜板",
-  "item.fracdustry.iron_plate": "铁板",
   "item.fracdustry.lithium_ingot": "锂锭",
   "item.fracdustry.steel_ingot": "钢锭",
   "item.fracdustry.steel_plate": "钢板",
@@ -29,12 +27,14 @@
   "item.fracdustry.tin_plate": "锡板",
   "item.fracdustry.titanium_ingot": "钛锭",
   "item.fracdustry.titanium_plate": "钛板",
-  "item.fracdustry.uranium_ingot": "铀锭",
 
   "itemGroup.fracdustry.material": "分形工业：材料",
   "itemGroup.fracdustry.machinery": "分形工业：机器",
 
-  "tooltips.fracdustry.generator":"热力发电机利用热能加热水产生水蒸气以提供机械能，后者最终由内置的动能发电机转换为电能。",
+  "tooltips.fracdustry.energy_cable": "能量线缆可连接不相邻的机器并在其间传输能量。",
+  "tooltips.fracdustry.thermal_generator.1":"热力发电机利用热能加热水产生水蒸气以提供机械能，",
+  "tooltips.fracdustry.thermal_generator.2":"后者最终由内置的动能发电机转化为电能。",
+  "tooltips.fracdustry.microwave_generator": "特殊材料制成的微波发电机能捕捉微波信号，并将其转化为微小的电流。",
 
   "units.fracdustry.sec": " 秒"
 }

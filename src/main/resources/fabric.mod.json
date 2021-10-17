@@ -26,6 +26,12 @@
         "adapter": "kotlin",
         "value": "dev.anotherfractal.fracdustry.Fracdustry"
       }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.anotherfractal.fracdustry.FracdustryClient"
+      }
     ]
   },
   "depends": {
