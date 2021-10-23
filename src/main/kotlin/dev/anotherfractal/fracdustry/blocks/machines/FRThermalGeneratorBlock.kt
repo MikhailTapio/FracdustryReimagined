@@ -32,11 +32,11 @@ class FRThermalGeneratorBlock(settings: Settings?) : BlockWithEntity(settings) {
         defaultState = getStateManager().defaultState.with(POWERED, false)
     }
 
-    override fun createBlockEntity(pos: BlockPos?, state: BlockState?): BlockEntity? {
+    override fun createBlockEntity(pos: BlockPos?, state: BlockState?): BlockEntity {
         return FRThermalGeneratorBlockEntity(pos, state)
     }
 
-    override fun getRenderType(state: BlockState?): BlockRenderType? {
+    override fun getRenderType(state: BlockState?): BlockRenderType {
         return BlockRenderType.MODEL
     }
 
@@ -52,8 +52,8 @@ class FRThermalGeneratorBlock(settings: Settings?) : BlockWithEntity(settings) {
 
     override fun appendProperties(builder: StateManager.Builder<Block, BlockState>?) {
         super.appendProperties(builder)
-        if (builder != null) builder.add(HORIZONTAL_FACING)
-        if (builder != null) builder.add(POWERED)
+        builder?.add(HORIZONTAL_FACING)
+        builder?.add(POWERED)
     }
 
     override fun getPlacementState(ctx: ItemPlacementContext): BlockState? {
@@ -95,9 +95,8 @@ class FRThermalGeneratorBlock(settings: Settings?) : BlockWithEntity(settings) {
     ) {
         if (state.block !== newState.block) {
             val blockEntity = world.getBlockEntity(pos)
-            if (blockEntity is FRThermalGeneratorBlockEntity) {
-                ItemScatterer.spawn(world, pos, FRInventory.of(DefaultedList.of()))
-            }
+            if (blockEntity is FRThermalGeneratorBlockEntity)
+                ItemScatterer.spawn(world, pos, blockEntity)
             super.onStateReplaced(state, world, pos, newState, moved)
         }
     }

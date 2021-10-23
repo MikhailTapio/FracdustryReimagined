@@ -12,11 +12,11 @@
     "Peakstep"
   ],
   "contact": {
-    "homepage": "https://github.com/Peakstep233",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/AnotherFractal",
+    "sources": "https://github.com/AnotherFractal/FracdustryReimagined"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/fracdustry/icon.png",
 
   "environment": "*",
@@ -39,8 +39,5 @@
     "fabric": "*",
     "fabric-language-kotlin": "*",
     "minecraft": "1.17.x"
-  },
-  "suggests": {
-    "flamingo": "*"
   }
 }

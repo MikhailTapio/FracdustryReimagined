@@ -22,13 +22,13 @@ import net.minecraft.util.math.BlockPos
 class FRThermalGeneratorBlockEntity(pos: BlockPos?, state: BlockState?) :
     BlockEntity(THERMAL_GENERATOR_BLOCK_ENTITY, pos, state), NamedScreenHandlerFactory, FRInventory {
 
-    override val items = DefaultedList.ofSize(1, ItemStack.EMPTY)
+    override val items: DefaultedList<ItemStack?> = DefaultedList.ofSize(64, ItemStack.EMPTY)
 
     override fun markDirty() {
 
     }
 
-    override fun createMenu(syncId: Int, inventory: PlayerInventory?, player: PlayerEntity?): ScreenHandler? {
+    override fun createMenu(syncId: Int, inventory: PlayerInventory?, player: PlayerEntity?): ScreenHandler {
         return FRThermalGeneratorScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos))
     }
 
@@ -42,8 +42,7 @@ class FRThermalGeneratorBlockEntity(pos: BlockPos?, state: BlockState?) :
     }
 
     override fun writeNbt(nbt: NbtCompound): NbtCompound {
-        super.writeNbt(nbt)
         Inventories.writeNbt(nbt, items)
-        return nbt
+        return super.writeNbt(nbt)
     }
 }

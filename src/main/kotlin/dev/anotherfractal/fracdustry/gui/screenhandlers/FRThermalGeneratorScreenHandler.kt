@@ -24,7 +24,7 @@ class FRThermalGeneratorScreenHandler(syncId: Int, playerInventory: PlayerInvent
     init {
         val root = WGridPanel()
         setRootPanel(root)
-        root.setSize(300, 200)
+        root.setSize(180, 152)
         root.insets = Insets.ROOT_PANEL
         val itemSlot = WItemSlot.of(blockInventory, 0)
         root.add(itemSlot, 4, 1)
