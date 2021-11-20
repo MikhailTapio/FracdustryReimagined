@@ -12,7 +12,34 @@
     "category": "block",
     "sounds": [
       {
-        "name": "fracdustry:block/machinery/thermal_generator/tgloop",
+        "name": "fracdustry:block/generators/thermal_generator/tgloop",
+        "stream": true
+      }
+    ]
+  },
+  "solar_generator_loop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "fracdustry:block/generators/solar_generator/sgloop",
+        "stream": true
+      }
+    ]
+  },
+  "electric_furnace_loop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "fracdustry:block/machines/electric_furnace/efloop",
+        "stream": true
+      }
+    ]
+  },
+  "ore_processor_loop": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "fracdustry:block/machines/ore_processor/oploop",
         "stream": true
       }
     ]

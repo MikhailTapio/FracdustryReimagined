@@ -20,6 +20,8 @@ repositories {
         name = "BuildCraft"
         url = "https://mod-buildcraft.com/maven"
     }
+    maven { url "https://api.modrinth.com/maven" }
+    maven { url 'https://maven.wispforest.io' }
 }
 
 dependencies {
@@ -33,14 +35,17 @@ dependencies {
 
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
 
-    modApi "teamreborn:energy:${project.energy_version}"
-    include "teamreborn:energy:${project.energy_version}"
+    modApi "maven.modrinth:libpow:${project.libpow_version}"
+    include "maven.modrinth:libpow:${project.libpow_version}"
 
     modImplementation "io.github.cottonmc:LibGui:${project.libgui_version}"
     include "io.github.cottonmc:LibGui:${project.libgui_version}"
 
     modImplementation "alexiil.mc.lib:libblockattributes-all:0.9.0"
     include "alexiil.mc.lib:libblockattributes-all:0.9.0"
+
+    modImplementation "com.glisco:owo-lib:${project.owo_version}"
+    include "com.glisco:owo-lib:${project.owo_version}"
 }
 
 processResources {

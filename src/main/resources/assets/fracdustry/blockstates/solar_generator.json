@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "fracdustry:block/generators/solar_generator/solar_generator" },
+    "facing=south": { "model": "fracdustry:block/generators/solar_generator/solar_generator", "y": 180 },
+    "facing=west": { "model": "fracdustry:block/generators/solar_generator/solar_generator", "y": 270 },
+    "facing=east": { "model": "fracdustry:block/generators/solar_generator/solar_generator", "y": 90 }
+  }
+}

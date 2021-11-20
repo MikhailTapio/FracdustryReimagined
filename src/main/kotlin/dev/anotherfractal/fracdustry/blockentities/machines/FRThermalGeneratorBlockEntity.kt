@@ -3,6 +3,8 @@ package dev.anotherfractal.fracdustry.blockentities.machines
 import dev.anotherfractal.fracdustry.gui.screenhandlers.FRThermalGeneratorScreenHandler
 import dev.anotherfractal.fracdustry.inventory.FRInventory
 import dev.anotherfractal.fracdustry.registry.FRBlockEntityRegistry.THERMAL_GENERATOR_BLOCK_ENTITY
+import dev.enderger.libpow.impl.PowBuffer
+import dev.enderger.libpow.impl.PowUnit
 import net.minecraft.block.BlockState
 import net.minecraft.block.entity.BlockEntity
 import net.minecraft.entity.player.PlayerEntity
@@ -44,5 +46,9 @@ class FRThermalGeneratorBlockEntity(pos: BlockPos?, state: BlockState?) :
     override fun writeNbt(nbt: NbtCompound): NbtCompound {
         Inventories.writeNbt(nbt, items)
         return super.writeNbt(nbt)
+    }
+
+    companion object{
+        val THERMAL_GEN_MAX_ENERGY = PowUnit(25000.0)
     }
 }

@@ -8,14 +8,14 @@ import net.minecraft.util.registry.Registry
 
 
 object FRBlockEntityRegistry {
-    var THERMAL_GENERATOR_BLOCK_ENTITY: BlockEntityType<FRThermalGeneratorBlockEntity>? = null
+    var THERMAL_GENERATOR_BLOCK_ENTITY : BlockEntityType<FRThermalGeneratorBlockEntity>? = null
+
 
     fun RegisterAll() {
-        THERMAL_GENERATOR_BLOCK_ENTITY = Registry.register(
+        Registry.register(
             Registry.BLOCK_ENTITY_TYPE,
             "fracdustry:thermal_generator_block_entity",
             FabricBlockEntityTypeBuilder.create(::FRThermalGeneratorBlockEntity, THERMAL_GENERATOR_BLOCK ).build(null)
         )
     }
-
 }

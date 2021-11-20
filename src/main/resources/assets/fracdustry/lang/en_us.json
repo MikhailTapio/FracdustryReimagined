@@ -33,8 +33,10 @@
 
   "tooltips.fracdustry.energy_cable":"An energy cable connects and transfers energy between non-adjacent machines.",
   "tooltips.fracdustry.thermal_generator.1": "The thermal generator uses thermal energy to heat water to produce steam to provide mechanical energy,",
-  "tooltips.fracdustry.thermal_generator.2": "which is eventually converted into electrical energy by the built-in kinetic generator."
+  "tooltips.fracdustry.thermal_generator.2": "which is eventually converted into electrical energy by the built-in kinetic generator.",
   "tooltips.fracdustry.microwave_generator": "Made of special materials, the microwave generator captures microwave signal and convert it into tiny electrical currents.",
+  "tooltips.fracdustry.max_energy": "Max Capacity:",
+  "tooltips.fracdustry.placeholder_line": " ",
 
   "units.fracdustry.sec": " sec"
 }

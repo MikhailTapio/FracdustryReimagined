@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fracdustry:item/titanium_plate"
+    "layer0": "fracdustry:item/material/plates/titanium_plate"
   }
 }

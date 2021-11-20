@@ -35,6 +35,8 @@
   "tooltips.fracdustry.thermal_generator.1":"热力发电机利用热能加热水产生水蒸气以提供机械能，",
   "tooltips.fracdustry.thermal_generator.2":"后者最终由内置的动能发电机转化为电能。",
   "tooltips.fracdustry.microwave_generator": "特殊材料制成的微波发电机能捕捉微波信号，并将其转化为微小的电流。",
+  "tooltips.fracdustry.max_energy": "最大存储:",
+  "tooltips.fracdustry.placeholder_line": " ",
 
   "units.fracdustry.sec": " 秒"
 }

@@ -1,7 +1,9 @@
 package dev.anotherfractal.fracdustry.blocks.machines
 
 import dev.anotherfractal.fracdustry.blockentities.machines.FRThermalGeneratorBlockEntity
-import dev.anotherfractal.fracdustry.inventory.FRInventory
+import dev.anotherfractal.fracdustry.blockentities.machines.FRThermalGeneratorBlockEntity.Companion.THERMAL_GEN_MAX_ENERGY
+import dev.enderger.libpow.impl.PowBuffer
+import dev.enderger.libpow.impl.PowUnit
 import net.minecraft.block.*
 import net.minecraft.block.entity.BlockEntity
 import net.minecraft.client.item.TooltipContext
@@ -17,7 +19,6 @@ import net.minecraft.util.ActionResult
 import net.minecraft.util.Formatting
 import net.minecraft.util.Hand
 import net.minecraft.util.ItemScatterer
-import net.minecraft.util.collection.DefaultedList
 import net.minecraft.util.hit.BlockHitResult
 import net.minecraft.util.math.BlockPos
 import net.minecraft.util.shape.VoxelShape
@@ -27,10 +28,6 @@ import net.minecraft.world.World
 
 
 class FRThermalGeneratorBlock(settings: Settings?) : BlockWithEntity(settings) {
-    fun FRThermalGeneratorBlock(settings: Settings?) {
-        super.settings
-        defaultState = getStateManager().defaultState.with(POWERED, false)
-    }
 
     override fun createBlockEntity(pos: BlockPos?, state: BlockState?): BlockEntity {
         return FRThermalGeneratorBlockEntity(pos, state)
@@ -46,6 +43,11 @@ class FRThermalGeneratorBlock(settings: Settings?) : BlockWithEntity(settings) {
         tooltip: MutableList<Text?>,
         tooltipContext: TooltipContext?
     ) {
+        var thermal_gen_buffer_display = PowBuffer(THERMAL_GEN_MAX_ENERGY)
+        thermal_gen_buffer_display.insert(PowUnit(25000.0));
+        tooltip.add(TranslatableText("tooltips.fracdustry.max_energy"))
+        tooltip.add(thermal_gen_buffer_display.stored.display())
+        tooltip.add(TranslatableText("tooltips.fracdustry.placeholder_line"))
         tooltip.add(TranslatableText("tooltips.fracdustry.thermal_generator.1").formatted(Formatting.GRAY))
         tooltip.add(TranslatableText("tooltips.fracdustry.thermal_generator.2").formatted(Formatting.GRAY))
     }
@@ -101,3 +103,4 @@ class FRThermalGeneratorBlock(settings: Settings?) : BlockWithEntity(settings) {
         }
     }
 }
+
