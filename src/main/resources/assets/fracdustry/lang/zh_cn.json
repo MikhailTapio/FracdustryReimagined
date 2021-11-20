@@ -28,8 +28,10 @@
   "item.fracdustry.titanium_ingot": "钛锭",
   "item.fracdustry.titanium_plate": "钛板",
 
-  "itemGroup.fracdustry.material": "分形工业：材料",
-  "itemGroup.fracdustry.machinery": "分形工业：机器",
+  "itemGroup.fracdustry.main": "分形工业",
+  "itemGroup.fracdustry.main.tab.material": "分形工业：材料",
+  "itemGroup.fracdustry.main.tab.machinery": "分形工业：机械",
+  "itemGroup.fracdustry.main.button.github": "在GitHub上查看我们的项目！",
 
   "tooltips.fracdustry.energy_cable": "能量线缆可连接不相邻的机器并在其间传输能量。",
   "tooltips.fracdustry.thermal_generator.1":"热力发电机利用热能加热水产生水蒸气以提供机械能，",

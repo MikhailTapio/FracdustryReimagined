@@ -8,7 +8,6 @@ import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.DEEPSLATE_ILMEN
 import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.DEEPSLATE_SPODUMENE_ORE
 import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.ILMENITE_ORE
 import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.SPODUMENE_ORE
-import dev.anotherfractal.fracdustry.itemgroups.FRItemGroups
 import dev.anotherfractal.fracdustry.items.materials.FRIngotItem
 import dev.anotherfractal.fracdustry.items.materials.FRPlateItem
 import dev.anotherfractal.fracdustry.registry.FRBlockRegistry.THERMAL_GENERATOR_BLOCK
@@ -22,12 +21,10 @@ object FRItemRegistry {
     fun RegisterAll() {
         Registry.register(Registry.ITEM, Identifier("fracdustry", "aluminum_ingot"), FRIngotItem.ALUMINUM_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "bronze_ingot"), FRIngotItem.BRONZE_INGOT)
-        Registry.register(Registry.ITEM, Identifier("fracdustry", "cobalt_ingot"), FRIngotItem.COBALT_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "lithium_ingot"), FRIngotItem.LITHIUM_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "steel_ingot"), FRIngotItem.STEEL_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "tin_ingot"), FRIngotItem.TIN_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "titanium_ingot"), FRIngotItem.TITANIUM_INGOT)
-        Registry.register(Registry.ITEM, Identifier("fracdustry", "uranium_ingot"), FRIngotItem.URANIUM_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "aluminum_plate"), FRPlateItem.ALUMINUM_PLATE)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "bronze_plate"), FRPlateItem.BRONZE_PLATE)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "copper_plate"), FRPlateItem.COPPER_PLATE)
@@ -39,48 +36,48 @@ object FRItemRegistry {
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "bauxite_ore"),
-            BlockItem(BAUXITE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(BAUXITE_ORE, FabricItemSettings())
         )
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "cassiterite_ore"),
-            BlockItem(CASSITERITE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(CASSITERITE_ORE, FabricItemSettings())
         )
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "ilmenite_ore"),
-            BlockItem(ILMENITE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(ILMENITE_ORE, FabricItemSettings())
         )
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "spodumene_ore"),
-            BlockItem(SPODUMENE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(SPODUMENE_ORE, FabricItemSettings())
         )
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "deepslate_bauxite_ore"),
-            BlockItem(DEEPSLATE_BAUXITE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(DEEPSLATE_BAUXITE_ORE, FabricItemSettings())
         )
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "deepslate_cassiterite_ore"),
-            BlockItem(DEEPSLATE_CASSITERITE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(DEEPSLATE_CASSITERITE_ORE, FabricItemSettings())
         )
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "deepslate_ilmenite_ore"),
-            BlockItem(DEEPSLATE_ILMENITE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(DEEPSLATE_ILMENITE_ORE, FabricItemSettings())
         )
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "deepslate_spodumene_ore"),
-            BlockItem(DEEPSLATE_SPODUMENE_ORE, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MATERIALS))
+            BlockItem(DEEPSLATE_SPODUMENE_ORE, FabricItemSettings())
         )
 
         Registry.register(
             Registry.ITEM,
             Identifier("fracdustry", "thermal_generator"),
-            BlockItem(THERMAL_GENERATOR_BLOCK, FabricItemSettings().group(FRItemGroups.FRACDUSTRY_MACHINERY))
+            BlockItem(THERMAL_GENERATOR_BLOCK, FabricItemSettings())
         )
     }
 }

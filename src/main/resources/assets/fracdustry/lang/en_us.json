@@ -28,8 +28,10 @@
   "item.fracdustry.titanium_ingot": "Titanium Ingot",
   "item.fracdustry.titanium_plate": "Titanium Plate",
 
-  "itemGroup.fracdustry.material": "Fracdustry: Material",
-  "itemGroup.fracdustry.machinery": "Fracdustry: Machinery",
+  "itemGroup.fracdustry.main": "Fracdustry",
+  "itemGroup.fracdustry.main.tab.material": "Fracdustry: Material",
+  "itemGroup.fracdustry.main.tab.machinery": "Fracdustry: Machinery",
+  "itemGroup.fracdustry.main.button.github": "View Our Project on GitHub!",
 
   "tooltips.fracdustry.energy_cable":"An energy cable connects and transfers energy between non-adjacent machines.",
   "tooltips.fracdustry.thermal_generator.1": "The thermal generator uses thermal energy to heat water to produce steam to provide mechanical energy,",
