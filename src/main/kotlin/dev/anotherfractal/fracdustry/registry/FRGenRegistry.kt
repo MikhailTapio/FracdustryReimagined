@@ -19,7 +19,7 @@ import net.minecraft.world.gen.feature.ConfiguredFeature
 
 
 object FRGenRegistry {
-    fun RegisterAll() {
+    fun registerAll() {
         val oreBauxiteOverworld: RegistryKey<ConfiguredFeature<*, *>> = RegistryKey.of(
             Registry.CONFIGURED_FEATURE_KEY,
             Identifier("fracdustry", "ore_bauxite_overworld")

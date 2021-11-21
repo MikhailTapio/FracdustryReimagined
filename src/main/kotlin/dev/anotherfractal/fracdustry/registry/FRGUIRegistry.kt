@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier
 
 object FRGUIRegistry {
     var THERMAL_GENERATOR_SCREEN_HANDLER: ScreenHandlerType<FRThermalGeneratorScreenHandler>? = null
-    fun RegisterAll() {
+    fun registerAll() {
         THERMAL_GENERATOR_SCREEN_HANDLER = ScreenHandlerRegistry.registerSimple(
             Identifier("fracdustry","thermal_generator_gui")
         ) { syncId: Int, inventory: PlayerInventory? ->

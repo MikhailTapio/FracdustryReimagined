@@ -1,6 +1,6 @@
 package dev.anotherfractal.fracdustry.registry
 
-import dev.anotherfractal.fracdustry.blocks.machines.FRThermalGeneratorBlock
+import dev.anotherfractal.fracdustry.blocks.generators.FRThermalGeneratorBlock
 import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.BAUXITE_ORE
 import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.CASSITERITE_ORE
 import dev.anotherfractal.fracdustry.blocks.materials.FROreBlock.DEEPSLATE_BAUXITE_ORE
@@ -17,7 +17,7 @@ import net.minecraft.util.registry.Registry
 
 object FRBlockRegistry {
     val THERMAL_GENERATOR_BLOCK: FRThermalGeneratorBlock = FRThermalGeneratorBlock(FabricBlockSettings.of(Material.STONE).hardness(4.0f))
-    fun RegisterAll() {
+    fun registerAll() {
         Registry.register(Registry.BLOCK, Identifier("fracdustry", "bauxite_ore"), BAUXITE_ORE)
         Registry.register(Registry.BLOCK, Identifier("fracdustry", "cassiterite_ore"), CASSITERITE_ORE)
         Registry.register(Registry.BLOCK, Identifier("fracdustry", "ilmenite_ore"), ILMENITE_ORE)

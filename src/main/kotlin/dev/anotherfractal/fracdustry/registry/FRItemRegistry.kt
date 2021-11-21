@@ -18,7 +18,7 @@ import net.minecraft.util.registry.Registry
 
 
 object FRItemRegistry {
-    fun RegisterAll() {
+    fun registerAll() {
         Registry.register(Registry.ITEM, Identifier("fracdustry", "aluminum_ingot"), FRIngotItem.ALUMINUM_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "bronze_ingot"), FRIngotItem.BRONZE_INGOT)
         Registry.register(Registry.ITEM, Identifier("fracdustry", "lithium_ingot"), FRIngotItem.LITHIUM_INGOT)
